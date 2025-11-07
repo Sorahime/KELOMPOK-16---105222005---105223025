@@ -1,0 +1,127 @@
+<section id="reservation-info" aria-labelledby="reservation-title">
+  <h2 id="reservation-title">Reservasi Meja</h2>
+
+  <p>
+    Untuk memastikan kenyamanan Anda saat berkunjung ke Kopi Santai, kami menyediakan
+    sistem reservasi meja yang mudah dan cepat. Silakan lengkapi formulir di bawah ini
+    untuk menentukan jadwal, tipe meja, serta kebutuhan khusus lainnya.
+  </p>
+
+  <ul>
+    <li>Reservasi dilakukan minimal 2 jam sebelum kedatangan.</li>
+    <li>Reservasi akan dikonfirmasi melalui email atau WhatsApp.</li>
+    <li>Penundaan lebih dari 15 menit dapat membatalkan reservasi.</li>
+    <li>Private Room hanya tersedia untuk reservasi minimal 4 orang.</li>
+  </ul>
+</section>
+
+<section id="reservation-form" aria-labelledby="form-title">
+  <h2 id="form-title">Formulir Reservasi</h2>
+
+  <form action="#" method="post">
+
+    <fieldset>
+      <legend>Informasi Pribadi</legend>
+
+      <label for="nama">Nama Lengkap:</label>
+      <input
+        type="text"
+        id="nama"
+        name="nama"
+        placeholder="Masukkan nama lengkap Anda"
+        required
+      />
+
+      <label for="email">Email:</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="contoh: nama@email.com"
+        required
+      />
+
+      <label for="telepon">No. Telepon:</label>
+      <input
+        type="tel"
+        id="telepon"
+        name="telepon"
+        placeholder="contoh: 0812-3456-7890"
+        pattern="[0-9]{10,15}"
+        required
+      />
+    </fieldset>
+
+    <fieldset>
+      <legend>Detail Reservasi</legend>
+
+      <label for="tanggal">Tanggal:</label>
+      <input
+        type="date"
+        id="tanggal"
+        name="tanggal"
+        required
+      />
+
+      <label for="waktu">Waktu:</label>
+      <input
+        type="time"
+        id="waktu"
+        name="waktu"
+        required
+      />
+
+      <label for="jumlah">Jumlah Orang:</label>
+      <select id="jumlah" name="jumlah" required>
+        <option value="" hidden>Pilih jumlah orang</option>
+
+        <option value="1">1 Orang</option>
+        <option value="2">2 Orang</option>
+        <option value="3">3 Orang</option>
+        <option value="4">4 Orang</option>
+        <option value="5">5 Orang</option>
+        <option value="6">6 Orang</option>
+        <option value="7">7 Orang</option>
+        <option value="8">8 Orang</option>
+        <option value="9">9 Orang</option>
+        <option value="10">10 Orang</option>
+      </select>
+
+      <label for="tipe">Tipe Meja:</label>
+      <select id="tipe" name="tipe" required>
+        <option value="" hidden>Pilih tipe meja</option>
+        <option value="regular">Regular</option>
+        <option value="window">Window Seat</option>
+        <option value="private">Private Room</option>
+      </select>
+    </fieldset>
+
+    <fieldset>
+      <legend>Keterangan Tambahan</legend>
+
+      <label for="catatan">Catatan Khusus (optional):</label>
+      <textarea
+        id="catatan"
+        name="catatan"
+        placeholder="Misalnya: alergi makanan, permintaan khusus, dll."
+        rows="4"
+      ></textarea>
+
+      <label>
+        <input type="checkbox" required />
+        Saya menyetujui syarat dan ketentuan reservasi.
+      </label>
+    </fieldset>
+
+    <button type="submit">Kirim Reservasi</button>
+  </form>
+</section>
+
+<aside style="margin-top: 2rem;">
+  <h3>Reservasi Via Telepon / WhatsApp</h3>
+  <p>Jika Anda mengalami kendala dengan formulir, Anda dapat melakukan reservasi melalui:</p>
+  <p>
+    Telp: <a href="tel:+621234567890">+62 123 4567 890</a><br>
+    WhatsApp: <a href="https://wa.me/621234567890">+62 123 4567 890</a>
+  </p>
+</aside>
