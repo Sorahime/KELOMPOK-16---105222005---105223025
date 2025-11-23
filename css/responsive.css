@@ -1,72 +1,86 @@
-@media (min-width: 768px) {
-    main {
-        padding: 2rem 1.5rem 3.5rem;
+@media (max-width: 1024px) {
+    .hero-inner {
+        padding: 2.5rem 2rem;
+    }
+
+    .card-grid,
+    .menu-grid,
+    .gallery-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .about-story-inner,
+    .location-inner,
+    .reservation-form-inner {
+        grid-template-columns: minmax(0, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .header-inner {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.75rem;
+    }
+
+    .logo {
+        font-size: 1.5rem;
+        letter-spacing: 0.18em;
+    }
+
+    .main-nav ul {
+        gap: 1rem;
+        flex-wrap: wrap;
+        font-size: 0.9rem;
     }
 
     .hero {
-        padding: 3.5rem 2.5rem 4rem;
+        padding-top: 2rem;
     }
 
-    .featured-menu .menu-items {
-        display: grid;
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 1.75rem;
+    .hero-inner {
+        padding: 2.2rem 1.5rem;
+        border-radius: 1.5rem;
     }
 
-    .why-choose-us-grid {
-        grid-template-columns: repeat(3, minmax(0, 1fr));
+    .hero-inner h2 {
+        font-size: 1.9rem;
     }
 
+    .card-grid,
+    .menu-grid,
     .gallery-grid {
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-    }
-
-    .menu-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-
-    #story {
-        grid-template-columns: minmax(0, 1.1fr) minmax(0, 1.3fr);
-        align-items: center;
+        grid-template-columns: minmax(0, 1fr);
     }
 
     .footer-inner {
-        grid-template-columns: repeat(3, minmax(0, 1fr));
+        flex-direction: column;
+    }
+
+    .about-story {
+        padding-top: 2rem;
+    }
+
+    .reservation-form-inner {
+        padding: 1.5rem 1.25rem;
     }
 }
 
-@media (min-width: 1024px) {
-    h1 {
-        font-size: 2.4rem;
+@media (max-width: 480px) {
+    .hero-inner h2 {
+        font-size: 1.7rem;
     }
 
-    .hero h2 {
-        font-size: 2.4rem;
+    .hero-actions {
+        flex-direction: column;
     }
 
-    .hero p {
-        font-size: 1rem;
+    .menu-filters button {
+        flex: 1 1 auto;
+        text-align: center;
     }
 
-    .featured-menu .menu-items {
-        grid-template-columns: repeat(4, minmax(0, 1fr));
-    }
-
-    .menu-grid {
-        grid-template-columns: repeat(4, minmax(0, 1fr));
-    }
-
-    .gallery-grid {
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-    }
-
-    .footer-inner {
-        grid-template-columns: 2fr 1fr 1fr;
+    .reservation-form-inner {
+        padding: 1.25rem 1rem;
     }
 }
-
-
-
-
-
-
