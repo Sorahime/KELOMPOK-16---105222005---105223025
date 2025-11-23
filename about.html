@@ -1,107 +1,156 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kopi Kita Bersama</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/responsive.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tentang Kopi Santai</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
 </head>
-
 <body>
-    <header>
-        <h1>Kopi Santai</h1>
-        <p>Nikmati Setiap Tegukan~</p>
-
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="menu.html">Menu</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="reservation.html">Reservation</a></li>
-            </ul>
+  <header>
+    <div class="container">
+      <div class="top-bar">
+        <span class="tagline">Nikmati Setiap Tegukan~</span>
+        <nav class="navbar">
+          <a href="index.html">Home</a>
+          <a href="menu.html">Menu</a>
+          <a href="about.html">About</a>
+          <a href="reservation.html">Reservation</a>
         </nav>
-    </header>
-    
+      </div>
+      <div class="logo">Kopi Santai</div>
+    </div>
+  </header>
 
-    <section class="hero">
-        <h2>Selamat Datang di Kopi Santai•⩊•</h2>
-        <p>Tempat Terbaik untuk Bersantai dengan Secangkir Kopi</p>
+  <main class="about-main">
+    <div class="container">
+      <section class="story" id="story">
+        <figure>
+          <img src="images/ini-gambar.jpg" alt="Suasana hangat di dalam kafe Kopi Santai">
+          <figcaption>Suasana hangat di dalam kafe Kopi Santai.</figcaption>
+        </figure>
+        <div>
+          <h2>Cerita Kami</h2>
+          <p>Kopi Santai berawal dari keinginan sederhana untuk menghadirkan ruang berkumpul yang hangat bagi siapa saja. Dari mahasiswa yang butuh tempat belajar, pekerja yang mencari suasana tenang, hingga keluarga yang ingin menikmati waktu bersama.</p>
+          <p>Setiap cangkir kopi yang disajikan diracik dengan perhatian pada detail, mulai dari pemilihan biji kopi lokal berkualitas hingga proses seduh yang konsisten. Kami percaya bahwa kopi adalah medium untuk bercerita dan membangun koneksi.</p>
+          <p>Selain kopi, kami juga fokus pada kenyamanan ruang, kualitas pelayanan, dan rasa kebersamaan. Kami ingin setiap pengunjung merasa seperti pulang ke rumah kedua ketika datang ke Kopi Santai.</p>
+          <blockquote>“Nikmati setiap tegukan, rayakan setiap momen.”</blockquote>
+        </div>
+      </section>
 
-        <button>Lihat Menu</button>
-        <button>Reservasi Sekarang</button>
-    </section>
+      <section class="values" id="our-values">
+        <h2>Nilai-Nilai Kami</h2>
+        <ul>
+          <li><strong>Kualitas Premium</strong> melalui pemilihan biji dan proses seduh yang presisi.</li>
+          <li><strong>Pelayanan Terbaik</strong> yang ramah, cepat, dan penuh perhatian.</li>
+          <li><strong>Sustainability</strong> dengan mendukung petani lokal dan mengurangi limbah.</li>
+          <li><strong>Community</strong> sebagai ruang aman untuk belajar dan berkolaborasi.</li>
+          <li><strong>Transparansi</strong> tentang asal kopi dan proses pembuatannya.</li>
+          <li><strong>Inovasi</strong> lewat menu musiman dan eksperimen rasa yang relevan.</li>
+        </ul>
+      </section>
 
-    <section class="featured-menu">
-        <h2>Menu Favorit Kami</h2>
+      <section class="gallery" id="gallery">
+        <h2>Galeri Kafe</h2>
+        <div class="gallery-grid">
+          <figure>
+            <img src="images/interior.jpg" alt="Interior Kopi Santai dengan pencahayaan hangat">
+            <figcaption>Interior hangat untuk waktu santai yang tenang.</figcaption>
+          </figure>
+          <figure>
+            <img src="images/interior-jendela.jpeg" alt="Area duduk dekat jendela dengan tanaman">
+            <figcaption>Spot dekat jendela dengan cahaya alami.</figcaption>
+          </figure>
+          <figure>
+            <img src="images/barista.jpeg" alt="Barista menyeduh kopi manual brew">
+            <figcaption>Barista handal yang meracik kopi dengan sepenuh hati.</figcaption>
+          </figure>
+          <figure>
+            <img src="images/eksterior.jpeg" alt="Tampak depan kafe Kopi Santai">
+            <figcaption>Tampak depan kafe Kopi Santai.</figcaption>
+          </figure>
+          <figure>
+            <img src="images/latte-art.jpeg" alt="Latte art berbentuk hati di cangkir">
+            <figcaption>Latte art favorit pelanggan kami.</figcaption>
+          </figure>
+          <figure>
+            <img src="images/suasana-produktif.jpeg" alt="Pengunjung bekerja dengan laptop di sudut kafe">
+            <figcaption>Suasana produktif untuk belajar dan bekerja.</figcaption>
+          </figure>
+        </div>
+      </section>
 
-        <article class="menu-item">
-            <img src="images/espresso.jpg" alt="Noir Echo Espresso">
-            <h3>Noir Echo Espresso</h3>
-            <p>Harga: Rp 25.000</p>
-            <p>Deskripsi: Rasa kuat dan pahit khas biji kopi arabika murni, tanpa tambahan gula.</p>
-        </article>
+      <section class="location" id="location">
+        <h2>Lokasi & Jam Buka</h2>
+        <div class="map-wrapper">
+          <iframe
+            title="Peta Lokasi Kopi Santai"
+            src="https://www.google.com/maps?q=Kopi+Santai&output=embed"
+            width="100%"
+            height="300"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
 
-        <article class="menu-item">
-            <img src="images/cappucino.jpg" alt="Cloud Crest Cappuccino">
-            <h3>Cloud Crest Cappuccino</h3>
-            <p>Harga: Rp 28.000</p>
-            <p>Deskripsi: Perpaduan sempurna antara espresso, susu panas, dan busa susu lembut.</p>
-        </article>
+        <table class="hours-table">
+          <thead>
+            <tr>
+              <th>Hari</th>
+              <th>Jam Operasional</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Senin</td><td>08.00 - 22.00</td></tr>
+            <tr><td>Selasa</td><td>08.00 - 22.00</td></tr>
+            <tr><td>Rabu</td><td>08.00 - 22.00</td></tr>
+            <tr><td>Kamis</td><td>08.00 - 22.00</td></tr>
+            <tr><td>Jumat</td><td>08.00 - 22.00</td></tr>
+            <tr><td>Sabtu</td><td>09.00 - 23.00</td></tr>
+            <tr><td>Minggu</td><td>09.00 - 23.00</td></tr>
+          </tbody>
+        </table>
 
-        <article class="menu-item">
-            <img src="images/matcca.jpg" alt="Emerald Matcha Latte">
-            <h3>Emerald Matcha Latte</h3>
-            <p>Harga: Rp 32.000</p>
-            <p>Deskripsi: Bubuk teh hijau premium Jepang dengan susu creamy dan sedikit madu alami.</p>
-        </article>
+        <address>
+          Kopi Santai<br>
+          Jl. Cendana Raya No. 23, Jakarta Selatan<br>
+          Telp: +62 812 3456 7890<br>
+          Email: kafesantai.coffee@gmail.com
+        </address>
+      </section>
+    </div>
+  </main>
 
-        <article class="menu-item">
-            <img src="images/nasi goreng.jpg" alt="Nasi Goreng Santai">
-            <h3>Nasi Goreng Santai</h3>
-            <p>Harga: Rp 28.000</p>
-            <p>Deskripsi: Nasi goreng spesial dengan bumbu rumah, ayam suwir, telur, dan acar segar.</p>
-        </article>
-
-        <article class="menu-item">
-            <img src="images/french fries.jpg" alt="Crystal French Fries">
-            <h3>Crystal French Fries</h3>
-            <p>Harga: Rp 20.000</p>
-            <p>Deskripsi: Kentang goreng gurih dengan bumbu asin ringan dan saus tomat plus saus mayonaise.</p>
-        </article>
-
-    </section>
-
-    <section class="why-choose-us">
-        <h2>Mengapa Memilih Kami?</h2>
-        <article class="advantage">
-            <img src="images/Coffe Premium.jpg" alt="Biji Kopi Premium">
-            <h3>Biji Kopi Premium</h3>
-            <p>Kami hanya menggunakan biji kopi berkualitas tinggi yang dipilih secara khusus untuk memberikan rasa terbaik.</p>
-        </article>
-        <article class="advantage">
-            <img src="images/Comfy.jpg" alt="Suasana Nyaman">
-            <h3>Suasana Nyaman</h3>
-            <p>Kafe kami dirancang untuk menciptakan suasana yang hangat dan nyaman, sempurna untuk bersantai atau bekerja.</p>
-        </article>
-        <article class="advantage">
-            <img src="images/Wifi.jpg" alt="Wifi Gratis">
-            <h3>Wifi Gratis</h3>
-            <p>Nikmati koneksi internet cepat dan gratis di seluruh area kafe kami untuk mendukung kebutuhan Anda.</p>
-        </article>
-
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-title">Kopi Santai</div>
+          <p class="footer-text">Tempat terbaik untuk bersantai dengan secangkir kopi, mengerjakan tugas, atau bertemu teman.</p>
+        </div>
+        <div>
+          <div class="footer-title">Kontak</div>
+          <address class="address footer-text">
+            Jl. Cendana Raya No. 23, Jakarta Selatan<br>
+            Phone: +62 812 3456 7890<br>
+            Email: kafesantai.coffee@gmail.com
+          </address>
+        </div>
+        <div>
+          <div class="footer-title">Jam Operasional</div>
+          <ul class="footer-list">
+            <li>Senin–Jumat: 08.00 – 22.00</li>
+            <li>Sabtu–Minggu: 09.00 – 23.00</li>
+            <li>Instagram • Facebook • WhatsApp</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2024 Kopi Santai. All rights reserved.</span>
+        <span>Made for Pemrograman Web UAS</span>
+      </div>
+    </div>
+  </footer>
 </body>
-
-<footer>
-
-    <p>Alamat: Jl. Cendana Raya No. 23, Jakarta Selatan</p>
-    <p>Phone : +62 812 3456 7890</p>
-    <p>Email : kafesantai.coffee@gmail.com</p>
-    <p>Jam Operasional : 08.00AM - 11.00PM</p>
-    <p>Social Media : Instagram | Facebook | WhatsApp</p>
-    <address>2024 Kopi Santai. All rights reserved.</address>
-
-</footer>
-
 </html>
