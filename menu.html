@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 
 <head>
     <meta charset="UTF-8">
@@ -10,195 +10,228 @@
 </head>
 
 <body>
-    <h1>Menu Kopi Santai</h1>
 
-    
-    <nav class="menu-filters">
-        <button data-filter="all">All</button>
-        <button data-filter="coffee">Coffee</button>
-        <button data-filter="non-coffee">Non-Coffee</button>
-        <button data-filter="food">Food</button>
-        <button data-filter="snacks">Snacks</button>
-    </nav>
+    <header>
+        <div class="header-inner">
+            <div class="site-brand">
+                <span>Kopi Santai</span>
+                <span>Nikmati Setiap Tegukan~</span>
+            </div>
+            <nav aria-label="Navigasi utama">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html" aria-current="page">Menu</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="reservation.html">Reservation</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-    <h2 class="menu-title">Daftar Menu Lengkap</h2>
-    <section class="menu-grid">
+    <main>
+        <h1>Menu Kopi Santai</h1>
 
-        <!--Kopi-->
-        <article data-category="coffee">
-            <figure>
-                <img src="images/espresso.jpg" alt="Noir Echo Espresso">
-                <figcaption>Noir Echo Espresso</figcaption>
-            </figure>
-            <h3><span>Noir Echo Espresso</span></h3>
-            <p>Rasa kuat dan pahit khas biji kopi arabika murni, tanpa tambahan gula.</p>
-            <p>Harga: Rp 25.000</p>
-            <span class="tag best-seller">Best Seller</span>
-        </article>
+        <nav class="menu-filters" aria-label="Filter kategori menu">
+            <button data-filter="all">All</button>
+            <button data-filter="coffee">Coffee</button>
+            <button data-filter="non-coffee">Non-Coffee</button>
+            <button data-filter="food">Food</button>
+            <button data-filter="snacks">Snacks</button>
+        </nav>
 
-        <article data-category="coffee">
-            <figure>
-                <img src="images/cappucino.jpg" alt="Cloud Crest Cappuccino">
-                <figcaption>Cloud Crest Cappuccino</figcaption>
-            </figure>
-            <h3>Cloud Crest Cappuccino</h3>
-            <p>Perpaduan sempurna antara espresso, susu panas, dan busa susu lembut.</p>
-            <p>Harga: Rp 28.000</p>
-            <span class="tag best-seller">Best Seller</span>
-        </article>
+        <h2 class="menu-title">Daftar Menu Lengkap</h2>
 
-        <article data-category="coffee">
-            <figure>
-                <img src="" alt="Amber Silk Caramel Latte">
-                <figcaption>Amber Silk Caramel Latte</figcaption>
-            </figure>
-            <h3>Amber Silk Caramel Latte</h3>
-            <p>Perpaduan sempurna antara espresso, susu panas, dan busa susu lembut.</p>
-            <p>Harga: Rp 32.000</p>
-        </article>
+        <section class="menu-grid" aria-label="Daftar menu Kopi Santai">
 
-        <article data-category="coffee">
-            <figure>
-                <img src="" alt="Moonriver Americano">
-                <figcaption>Moonriver Americano</figcaption>
-            </figure>
-            <h3>Moonriver Americano</h3>
-            <p>Perpaduan sempurna antara espresso, susu panas, dan busa susu lembut.</p>
-            <p>Harga: Rp 24.000</p>
-        </article>
+            <!-- Coffee -->
+            <article class="menu-item" data-category="coffee">
+                <figure>
+                    <img src="images/espresso.jpg" alt="Noir Echo Espresso">
+                    <figcaption>Noir Echo Espresso</figcaption>
+                </figure>
+                <h3>Noir Echo Espresso</h3>
+                <p>Rasa kuat dan pahit khas biji kopi arabika murni, tanpa tambahan gula.</p>
+                <p class="price">Harga: Rp 25.000</p>
+                <span class="tag best-seller">Best Seller</span>
+            </article>
 
+            <article class="menu-item" data-category="coffee">
+                <figure>
+                    <img src="images/cappucino.jpg" alt="Cloud Crest Cappuccino">
+                    <figcaption>Cloud Crest Cappuccino</figcaption>
+                </figure>
+                <h3>Cloud Crest Cappuccino</h3>
+                <p>Perpaduan sempurna antara espresso, susu panas, dan busa susu lembut.</p>
+                <p class="price">Harga: Rp 28.000</p>
+                <span class="tag best-seller">Best Seller</span>
+            </article>
 
-        <!--Non-Kopi-->
-        <article data-category="non-coffee">
-            <figure>
-                <img src="images/matcha.jpg" alt="Emerald Matcha Latte">
-                <figcaption>Emerald Matcha Latte</figcaption>
-            </figure>
-            <h3>Emerald Matcha Latte</h3>
-            <p>Matcha bubuk premium dicampur susu hangat untuk rasa teh hijau yang lembut dan creamy.</p>
-            <p>Harga: Rp 32.000</p>
-            <span class="tag best-seller">Best Seller</span>
-        </article>
+            <article class="menu-item" data-category="coffee">
+                <figure>
+                    <img src="images/caramel-latte.jpg" alt="Amber Silk Caramel Latte">
+                    <figcaption>Amber Silk Caramel Latte</figcaption>
+                </figure>
+                <h3>Amber Silk Caramel Latte</h3>
+                <p>Espresso dengan saus karamel, susu creamy, dan foam lembut.</p>
+                <p class="price">Harga: Rp 32.000</p>
+            </article>
 
-        <article data-category="non-coffee">
-            <figure>
-                <img src="images/redvelvet.jpg" alt="Scarlet Redvelvet Latte">
-                <figcaption>Redvelvet Latte</figcaption>
-            </figure>
-            <h3>Redvelvet Latte</h3>
-            <p>Minuman manis berbasis susu dengan sentuhan rasa kue red velvet dan cokelat putih.</p>
-            <p>Harga: Rp 34.000</p>
-        </article>
+            <article class="menu-item" data-category="coffee">
+                <figure>
+                    <img src="images/americano.jpg" alt="Moonriver Americano">
+                    <figcaption>Moonriver Americano</figcaption>
+                </figure>
+                <h3>Moonriver Americano</h3>
+                <p>Espresso dengan air panas, rasa ringan namun tetap bold.</p>
+                <p class="price">Harga: Rp 24.000</p>
+            </article>
 
-        <article data-category="non-coffee">
-            <figure>
-                <img src="images/chocolate-frappe.jpg" alt="Forstbite Chocolate Frappe">
-                <figcaption>Forstbit eChocolate Frappe</figcaption>
-            </figure>
-            <h3>Chocolate Frappe</h3>
-            <p>Minuman dingin blended cokelat, disajikan dengan krim dan taburan cokelat.</p>
-            <p>Harga: Rp 36.000</p>
-        </article>
+            <!-- Non-Coffee -->
+            <article class="menu-item" data-category="non-coffee">
+                <figure>
+                    <img src="images/matcha.jpg" alt="Emerald Matcha Latte">
+                    <figcaption>Emerald Matcha Latte</figcaption>
+                </figure>
+                <h3>Emerald Matcha Latte</h3>
+                <p>Matcha bubuk premium dicampur susu hangat untuk rasa teh hijau yang lembut dan creamy.</p>
+                <p class="price">Harga: Rp 32.000</p>
+                <span class="tag best-seller">Best Seller</span>
+            </article>
 
-        <article data-category="non-coffee">
-            <figure>
-                <img src="images/lemon-honey-tea.jpg" alt="Sunbeam Lemon Honey Tea">
-                <figcaption>Sunbeam Lemon Honey Tea</figcaption>
-            </figure>
-            <h3>Sunbeam Lemon Honey Tea</h3>
-            <p>Teh hangat dengan perasan lemon segar dan madu alami — menyegarkan dan menenangkan.</p>
-            <p>Harga: Rp 26.000</p>
-        </article>
-             
-        <!--Food-->
-        <article data-category="Food">
-            <figure>
-                <img src="" alt="Nasi Goreng Santai">
-                <figcaption>Nasi Goreng Santai</figcaption>
-            </figure>
-            <h3>Nasi Goreng Santai</h3>
-            <p>Nasi goreng spesial dengan bumbu rumah, ayam suwir, telur, dan acar segar</p>
-            <p>Harga: Rp 28.000</p>
-            <span class="tag best-seller">Best Seller</span>
-        </article>
+            <article class="menu-item" data-category="non-coffee">
+                <figure>
+                    <img src="images/redvelvet.jpg" alt="Scarlet Redvelvet Latte">
+                    <figcaption>Redvelvet Latte</figcaption>
+                </figure>
+                <h3>Redvelvet Latte</h3>
+                <p>Minuman manis berbasis susu dengan sentuhan rasa kue red velvet dan cokelat putih.</p>
+                <p class="price">Harga: Rp 34.000</p>
+            </article>
 
-        <article data-category="Food">
-            <figure>
-                <img src="" alt="Luna Rosa Pasta">
-                <figcaption>Luna Rosa Pasta</figcaption>
-            </figure>
-            <h3>Luna Rosa Pasta</h3>
-            <p>Pasta lembut dengan saus krim tomat, sedikit herbal italia, dan taburan keju parmesan</p>
-            <p>Harga: Rp 58.000</p>
-        </article>
+            <article class="menu-item" data-category="non-coffee">
+                <figure>
+                    <img src="images/chocolate-frappe.jpg" alt="Forstbite Chocolate Frappe">
+                    <figcaption>Forstbite Chocolate Frappe</figcaption>
+                </figure>
+                <h3>Chocolate Frappe</h3>
+                <p>Minuman dingin blended cokelat, disajikan dengan krim dan taburan cokelat.</p>
+                <p class="price">Harga: Rp 36.000</p>
+            </article>
 
-        <article data-category="Food">
-            <figure>
-                <img src="" alt="Verdant Bloom Pasta">
-                <figcaption>Verdant Bloom Pasta</figcaption>
-            </figure>
-            <h3>Verdant Bloom Pasta</h3>
-            <p>Campuran sayuran hijau segar, alpukat, citrus dressing, dan biji panggang untuk tekstur yang cruncy</p>
-            <p>Harga: Rp 42.000</p>
-        </article>
+            <article class="menu-item" data-category="non-coffee">
+                <figure>
+                    <img src="images/lemon-honey-tea.jpg" alt="Sunbeam Lemon Honey Tea">
+                    <figcaption>Sunbeam Lemon Honey Tea</figcaption>
+                </figure>
+                <h3>Sunbeam Lemon Honey Tea</h3>
+                <p>Teh hangat dengan perasan lemon segar dan madu alami — menyegarkan dan menenangkan.</p>
+                <p class="price">Harga: Rp 26.000</p>
+            </article>
 
-        <article data-category="Food">
-            <figure>
-                <img src="" alt="Midnight Garden Sandwich">
-                <figcaption>Midnight Garden Sandwich</figcaption>
-            </figure>
-            <h3>Midnight Garden Sandwich</h3>
-            <p>Sandwich roti gandum isi smoked chicken, keju melted, selada, dan garlic herb mayo.</p>
-            <p>Harga: Rp 48.000</p>
-        </article>
+            <!-- Food -->
+            <article class="menu-item" data-category="food">
+                <figure>
+                    <img src="images/nasi-goreng.jpg" alt="Nasi Goreng Santai">
+                    <figcaption>Nasi Goreng Santai</figcaption>
+                </figure>
+                <h3>Nasi Goreng Santai</h3>
+                <p>Nasi goreng spesial dengan bumbu rumah, ayam suwir, telur, dan acar segar.</p>
+                <p class="price">Harga: Rp 28.000</p>
+                <span class="tag best-seller">Best Seller</span>
+            </article>
 
-        <!--Snacks-->
-        <article data-category="Snacks">
-            <figure>
-                <img src="images/chocolate-cake.jpg" alt="Midnight Chocolate Cake">
-                <figcaption>Midnight Chocolate Cake</figcaption>
-            </figure>
-            <h3>Midnight Chocolate Cake</h3>
-            <p>Kue cokelat lembut dengan lapisan krim dan taburan cokelat serut.</p>
-            <p>Harga: Rp 30.000</p>
-        </article>
+            <article class="menu-item" data-category="food">
+                <figure>
+                    <img src="images/luna-rosa-pasta.jpg" alt="Luna Rosa Pasta">
+                    <figcaption>Luna Rosa Pasta</figcaption>
+                </figure>
+                <h3>Luna Rosa Pasta</h3>
+                <p>Pasta lembut dengan saus krim tomat, herbal Italia, dan taburan keju parmesan.</p>
+                <p class="price">Harga: Rp 58.000</p>
+            </article>
 
-        <article data-category="Snacks">
-            <figure>
-                <img src="images/chocolate-cookies.jpg" alt="Chocolate Chip Cookies">
-                <figcaption>Chocolate Chip Cookies</figcaption>
-            </figure>
-            <h3>Chocolate Chip Cookies</h3>
-            <p>Kue kering renyah di pinggir dan lembut di dalam, penuh potongan cokelat.</p>
-            <p>Harga: Rp 18.000</p>
-        </article>
+            <article class="menu-item" data-category="food">
+                <figure>
+                    <img src="images/verdant-bloom-salad.jpg" alt="Verdant Bloom Salad">
+                    <figcaption>Verdant Bloom Salad</figcaption>
+                </figure>
+                <h3>Verdant Bloom Salad</h3>
+                <p>Campuran sayuran hijau segar, alpukat, citrus dressing, dan biji panggang untuk tekstur yang crunchy.</p>
+                <p class="price">Harga: Rp 42.000</p>
+            </article>
 
-        <article data-category="Snacks">
-            <figure>
-                <img src="images/pastry.jpg" alt="Aurora Assorted Pastry">
-                <figcaption>Aurora Assorted Pastry</figcaption>
-            </figure>
-            <h3>Aurora Assorted Pastry</h3>
-            <p>Pilihan pastry isi selai, cokelat, dan keju — sempurna untuk teman minum kopi.</p>
-            <p>Harga: Rp 22.000</p>
-            <span class="tag new">New</span>
-        </article>
+            <article class="menu-item" data-category="food">
+                <figure>
+                    <img src="images/midnight-garden-sandwich.jpg" alt="Midnight Garden Sandwich">
+                    <figcaption>Midnight Garden Sandwich</figcaption>
+                </figure>
+                <h3>Midnight Garden Sandwich</h3>
+                <p>Sandwich roti gandum isi smoked chicken, keju melted, selada, dan garlic herb mayo.</p>
+                <p class="price">Harga: Rp 48.000</p>
+            </article>
 
-        <article data-category="Snacks">
-            <figure>
-                <img src="images/french-fries.jpg" alt="Crystal French Fries">
-                <figcaption>Crystal French Fries</figcaption>
-            </figure>
-            <h3>Crystal French Fries</h3>
-            <p>Kentang goreng renyah dengan taburan garam laut, disajikan dengan saus pilihan.</p>
-            <p>Harga: Rp 20.000</p>
-            <span class="tag best-seller">Best Seller</span>
-        </article> 
+            <!-- Snacks -->
+            <article class="menu-item" data-category="snacks">
+                <figure>
+                    <img src="images/chocolate-cake.jpg" alt="Midnight Chocolate Cake">
+                    <figcaption>Midnight Chocolate Cake</figcaption>
+                </figure>
+                <h3>Midnight Chocolate Cake</h3>
+                <p>Kue cokelat lembut dengan lapisan krim dan taburan cokelat serut.</p>
+                <p class="price">Harga: Rp 30.000</p>
+            </article>
 
-    </section>
+            <article class="menu-item" data-category="snacks">
+                <figure>
+                    <img src="images/chocolate-cookies.jpg" alt="Chocolate Chip Cookies">
+                    <figcaption>Chocolate Chip Cookies</figcaption>
+                </figure>
+                <h3>Chocolate Chip Cookies</h3>
+                <p>Kue kering renyah di pinggir dan lembut di dalam, penuh potongan cokelat.</p>
+                <p class="price">Harga: Rp 18.000</p>
+            </article>
+
+            <article class="menu-item" data-category="snacks">
+                <figure>
+                    <img src="images/pastry.jpg" alt="Aurora Assorted Pastry">
+                    <figcaption>Aurora Assorted Pastry</figcaption>
+                </figure>
+                <h3>Aurora Assorted Pastry</h3>
+                <p>Pilihan pastry isi selai, cokelat, dan keju — sempurna untuk teman minum kopi.</p>
+                <p class="price">Harga: Rp 22.000</p>
+                <span class="tag new">New</span>
+            </article>
+
+            <article class="menu-item" data-category="snacks">
+                <figure>
+                    <img src="images/french-fries.jpg" alt="Crystal French Fries">
+                    <figcaption>Crystal French Fries</figcaption>
+                </figure>
+                <h3>Crystal French Fries</h3>
+                <p>Kentang goreng renyah dengan taburan garam laut, disajikan dengan saus pilihan.</p>
+                <p class="price">Harga: Rp 20.000</p>
+                <span class="tag best-seller">Best Seller</span>
+            </article>
+
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-inner">
+            <div>
+                <p>Alamat: Jl. Cendana Raya No. 23, Jakarta Selatan</p>
+                <p>Phone: +62 812 3456 7890</p>
+                <p>Email: kafesantai.coffee@gmail.com</p>
+            </div>
+
+            <div>
+                <p>Ikuti Kami:</p>
+                <p>Instagram | Facebook | WhatsApp</p>
+            </div>
+
+            <p class="footer-bottom">© 2024 Kopi Santai. All rights reserved.</p>
+        </div>
+    </footer>
+
 </body>
-
 </html>
-
-
-
