@@ -234,5 +234,40 @@
         </div>
     </footer>
 
+    <!-- SCRIPT FILTER KATEGORI -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const filterButtons = document.querySelectorAll(".menu-filters button");
+            const menuItems = document.querySelectorAll(".menu-item");
+
+            // Set default: tombol "All" aktif
+            const defaultButton = document.querySelector('.menu-filters button[data-filter="all"]');
+            if (defaultButton) {
+                defaultButton.classList.add("active");
+            }
+
+            filterButtons.forEach(button => {
+                button.addEventListener("click", () => {
+                    const filter = button.getAttribute("data-filter");
+
+                    // Ganti tombol aktif
+                    filterButtons.forEach(btn => btn.classList.remove("active"));
+                    button.classList.add("active");
+
+                    // Tampilkan / sembunyikan item
+                    menuItems.forEach(item => {
+                        const category = item.getAttribute("data-category");
+
+                        if (filter === "all" || category === filter) {
+                            item.style.display = "";
+                        } else {
+                            item.style.display = "none";
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+
 </body>
 </html>
